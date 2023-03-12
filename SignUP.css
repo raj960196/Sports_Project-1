@@ -38,6 +38,7 @@ body {
 }
 
 .left .overlay p {
+    font-size: 1.5vmax;
     margin-top: 40px;
     font-weight: 900;
     margin-left: 60px;
@@ -59,9 +60,20 @@ body {
 }
 
 .right h5 {
-    font-size: 5vmax;
+    font-size: 3vmax;
     line-height: 0;
+    text-align: center;
 }
+
+.right a{
+    text-decoration: none;
+
+}
+.right p {
+    font-size: 14px;
+    color: #061f50;
+    font-size: 20px;
+    }
 
 .right .inputs {
     overflow: hidden;
@@ -78,26 +90,29 @@ body {
 }
 
 .right .remember-me--forget-password {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .right .remember-me--forget-password input {
     margin: 0;
     margin-right: 7px;
     width: auto;
+    
 }
-
 .right .button{
+    justify-content: space-around;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
 }
 
 .right button {
-    float: right;
+    justify-content: space-between;
     color: #fff;
-    font-size: 16px;
+    font-size: 1vmax;
+    text-align: center;
     padding: 12px 35px;
     margin: 0 10px;
     border-radius: 50px;
@@ -124,4 +139,20 @@ body {
   
 .label input[type="checkbox"] {
     display: none;
+}
+
+@media(max-width:760px){
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .box{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left{
+        display: none;
+    }
 }
